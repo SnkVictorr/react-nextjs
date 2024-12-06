@@ -8,6 +8,12 @@ export interface CategoryItemProps {
   };
 }
 
+// // {
+//     id: string;
+//     name: string;
+//     imageUrl: string;
+// }
+
 const CategoryItem = ({ categoria }: CategoryItemProps) => {
   return (
     <div className="flex items-center gap-3 rounded-full bg-white px-4 py-3 shadow-md">
@@ -17,6 +23,7 @@ const CategoryItem = ({ categoria }: CategoryItemProps) => {
         height={30}
         width={30}
       />
+
       <span className="text-sm font-semibold">{categoria.name}</span>
     </div>
   );
